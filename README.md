@@ -1,0 +1,2 @@
+# kickstarter-analysis
+Louise’s play Fever came close to its fundraising goal in a short amount of time. Now, she wants to know how different campaigns fared in relation to their launch dates and their funding goals. In this project, using Kickstarter data set which is an excel document with a large amount of cells, the campaign outcomes based on their launch dates and their funding goals are being analyzed and visualized.
