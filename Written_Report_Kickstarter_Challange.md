@@ -35,9 +35,9 @@ and second "Months" column was created by the formula
 
 > = TEXT(Q2,"mmm")
 
-where Q is the column headed as "Date Created Conversion". After all, concerning pivot table and pivot chart were created which are given in the sheet named "Theater Outcomes by Launch Date" in the excel document named "Kickstarter_Challenge". The main finding is the following line graph:
+where Q is the column headed as "Date Created Conversion". After all, concerning pivot table and pivot chart were created which are given in the sheet named "Theater Outcomes by Launch Date" in the excel document named ![Kickstarter_Challenge](./Kickstarter_Challenge.xls). The main finding is the following line graph:
 
-> ![](Theater_Outcomes_vs_Launch.png)
+![](./resources/Theater_Outcomes_vs_Launch.png)
 
 In this graph it can be clearly observed that in every month the number of successful campaigns of theater is larger than that of failed campaigns. The successes in the May is the highest. There is high successes in June and July also. Although, the success in February and April are the same, the fail in February is lower than the fail in April. So, among February and April, February is preferable to launch a theater campaign. Similarly, the success in April and August are almost the same, the fail in April is lower than the fail in August, which means April is preferable to launch a theater campaign rather than August.This information with the percentage of success is  visualized in the following table:
 
@@ -54,7 +54,7 @@ In summary, It can be recommended to Louise the launch the campaign in May, if i
 
 In order to analyze outcomes based on the goals, the range of goals was divided into subintervals as "less than 1000","1000 to 4999","5000 to 9999","10000 to 14999", "15000 to 19999","20000 to 24999","25000 to 29999", "30000 to 34999", "35000 to 39999", "40000 to 44999", "45000 to 49999" and "50000 or more".The original data did not have subcategory column so it was created by using category and subcategory column first. Because it was needed to put the condition "plays" (which is a subcategory of theater) in the **COUNTIFS()** function. Four conditions are argued in **COUNTIFS()** function:lower bound of interval in the column headed as "Goals", upper bound of interval in the column headed as "Goals", "successful" or "failed" or "canceled" in the column headed as "Outcomes" and "plays" in the column headed as "Subcategory". So that, the table in the sheet named "Outcomes Based on Goals" in the excel document named "Kickstarter_Challenge" was created. Percentages of "successful", "failed" and "canceled" campaigns of "plays" are computed and displayed in the same table also. Based on the table the line graph named "Outcomes Based on Goals" was created. The concerned graph is the following:
 
-> Outcomes_vr_Goals.png
+![](./sources/Outcomes_vr_Goals.png)
 
 One quick look in this graph shows that the success and fail in plays campaigns are equivalent if the amount of goal is between $ 15000 and $ 19999. If the amount of goal is less than 15000 there is more chance for the campaign being successful than being failed. And amazingly, the probability that a plays campaign being successful is larger than the probability of a plays campaign being failed when the amount of the goal is between $ 35000 and $ 45000. Let's put the trend of percentage of successful under the scope by the following table:
 
