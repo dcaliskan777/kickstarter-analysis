@@ -35,7 +35,7 @@ and second "Months" column was created by the formula
 
 > = TEXT(Q2,"mmm")
 
-where Q is the column headed as "Date Created Conversion". After all, concerning pivot table and pivot chart were created which are given in the sheet named "Theater Outcomes by Launch Date" in the excel document named ![Kickstarter_Challenge](./Kickstarter_Challenge.xls). The main finding is the following line graph:
+where Q is the column headed as "Date Created Conversion". After all, concerning pivot table and pivot chart were created which are given in the sheet named "Theater Outcomes by Launch Date" in the excel document named ![Kickstarter_Challenge](https://github.com/dcaliskan777/kickstarter-analysis/blob/main/%20Kickstarter_Challenge.xlsx). The main finding is the following line graph:
 
 ![](./resources/Theater_Outcomes_vs_Launch.png)
 
@@ -52,9 +52,9 @@ In summary, It can be recommended to Louise the launch the campaign in May, if i
 
 ### Analysis of Outcomes Based on Goals
 
-In order to analyze outcomes based on the goals, the range of goals was divided into subintervals as "less than 1000","1000 to 4999","5000 to 9999","10000 to 14999", "15000 to 19999","20000 to 24999","25000 to 29999", "30000 to 34999", "35000 to 39999", "40000 to 44999", "45000 to 49999" and "50000 or more".The original data did not have subcategory column so it was created by using category and subcategory column first. Because it was needed to put the condition "plays" (which is a subcategory of theater) in the **COUNTIFS()** function. Four conditions are argued in **COUNTIFS()** function:lower bound of interval in the column headed as "Goals", upper bound of interval in the column headed as "Goals", "successful" or "failed" or "canceled" in the column headed as "Outcomes" and "plays" in the column headed as "Subcategory". So that, the table in the sheet named "Outcomes Based on Goals" in the excel document named "Kickstarter_Challenge" was created. Percentages of "successful", "failed" and "canceled" campaigns of "plays" are computed and displayed in the same table also. Based on the table the line graph named "Outcomes Based on Goals" was created. The concerned graph is the following:
+In order to analyze outcomes based on the goals, the range of goals was divided into subintervals as "less than 1000","1000 to 4999","5000 to 9999","10000 to 14999", "15000 to 19999","20000 to 24999","25000 to 29999", "30000 to 34999", "35000 to 39999", "40000 to 44999", "45000 to 49999" and "50000 or more".The original data did not have subcategory column so it was created by using category and subcategory column first. Because it was needed to put the condition "plays" (which is a subcategory of theater) in the **COUNTIFS()** function. Four conditions are argued in **COUNTIFS()** function:lower bound of interval in the column headed as "Goals", upper bound of interval in the column headed as "Goals", "successful" or "failed" or "canceled" in the column headed as "Outcomes" and "plays" in the column headed as "Subcategory". So that, the table in the sheet named "Outcomes Based on Goals" in the excel document named ![Kickstarter_Challenge](https://github.com/dcaliskan777/kickstarter-analysis/blob/main/%20Kickstarter_Challenge.xlsx) was created. Percentages of "successful", "failed" and "canceled" campaigns of "plays" are computed and displayed in the same table also. Based on the table the line graph named "Outcomes Based on Goals" was created. The concerned graph is the following:
 
-![](./sources/Outcomes_vr_Goals.png)
+![](./resources/Outcomes_vs_Goals.png)
 
 One quick look in this graph shows that the success and fail in plays campaigns are equivalent if the amount of goal is between $ 15000 and $ 19999. If the amount of goal is less than 15000 there is more chance for the campaign being successful than being failed. And amazingly, the probability that a plays campaign being successful is larger than the probability of a plays campaign being failed when the amount of the goal is between $ 35000 and $ 45000. Let's put the trend of percentage of successful under the scope by the following table:
 
@@ -84,7 +84,7 @@ I started to make the project before completing the internet document for the fi
 
 Second challenge was encountered when I decided to create a column concerning months of the launch of campaigns, I googled again and find out how to take out the moths from the date. 
 
-The third challenge was about using the **COUNTIFS()**function, arguments in the **COUNTIFS** are really confusable to understand. I tried several times to overcome this problem. An other problem with this function, it was time-wasting to write conditions concerning boundaries of intervals, there were a lot of cells do do it, I asked myself how I can do it by using shifting the  a function through a column down; and then found out the solution which is to write boundaries in different columns. One may see this in the column I and the column J in the sheet named "Outcomes Based on Goals" in the excel document named "Kickstarter_Challenge". 
+The third challenge was about using the **COUNTIFS()**function, arguments in the **COUNTIFS** are really confusable to understand. I tried several times to overcome this problem. An other problem with this function, it was time-wasting to write conditions concerning boundaries of intervals, there were a lot of cells do do it, I asked myself how I can do it by using shifting the  a function through a column down; and then found out the solution which is to write boundaries in different columns. One may see this in the column I and the column J in the sheet named "Outcomes Based on Goals" in the excel document named ![Kickstarter_Challenge](https://github.com/dcaliskan777/kickstarter-analysis/blob/main/%20Kickstarter_Challenge.xlsx). 
 
 The last challenge was to write the report, it was first time that I was using markdown document. I solved this problem by patience, It took me a lot.
 
@@ -104,5 +104,6 @@ Outcomes can be analyzed based on the duration of the campaign. It can be done b
 Additionally, for being more accurate we can make outlier analysis, the dataset is large enough so that some data may be included mistakenly, there might be outliers for some other reasons to be investigated. For example, in goals, lower quartile is 2000, upper quartile is 15000, inter quartile range is 13000 and so the lower boundary of upper outliers is 34500. In this column 569 elements are outlier. It makes 14 % of the entire column, this is enough large to be taken into account, am I wrong? Among these 569 outliers 28 of them are in the theater/plays campaigns. This might explain why the high value of percentage of successful in the goal between 35000 to 45000 does not follow the general trend. In fact they are all outliers, whatever reasons are.
 
 
-> 2/22/2022
-> Dursun Caliskan
+**Dursun Caliskan**
+
+*2/22/2022*
